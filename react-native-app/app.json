@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "Event Photo Platform",
+    "slug": "event-photo-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.eventphoto.mobile",
+      "edgeToEdgeEnabled": false,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow EventPhoto Platform to access your photos.",
+          "savePhotosPermission": "Allow EventPhoto Platform to save photos."
+        }
+      ],
+      "@react-native-community/datetimepicker"
+    ]
+  }
+}
